@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Até logo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="welcome.css">
+  <a href="/accounts/logout/" class="ws-link">Sair</a>
+  <style>
+    .lo-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #faeeda;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.75rem;
+    }
+
+    .lo-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: #854f0b;
+      stroke-width: 2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .lo-tag {
+      display: inline-block;
+      background: #faeeda;
+      color: #854f0b;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+    }
+
+    .lo-btn-outline {
+      display: block;
+      width: 100%;
+      padding: 13px;
+      background: transparent;
+      color: #1a1a1a;
+      border: 0.5px solid rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
+      margin-bottom: 0.75rem;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .lo-btn-outline:hover {
+      background: #f5f4f1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ws-wrap">
+    <div class="ws-card">
+
+      <div class="lo-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+          <polyline points="16 17 21 12 16 7"/>
+          <line x1="21" y1="12" x2="9" y2="12"/>
+        </svg>
+      </div>
+
+      <span class="lo-tag">Sessão encerrada</span>
+
+      <h1 class="ws-title">Até logo!</h1>
+      <p class="ws-sub">Você saiu da sua conta com sucesso.<br>Seus dados estão seguros.</p>
+
+      <hr class="ws-divider">
+
+      <a href="/accounts/login/" class="ws-btn">Entrar novamente</a>
+      <a href="/" class="lo-btn-outline">Voltar para a página inicial</a>
+
+    </div>
+  </div>
+
+</body>
+</html>

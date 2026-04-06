@@ -1,0 +1,187 @@
+/* Define o estilo global da página */
+body {
+  background: #f5f4f1; /* cor de fundo suave */
+  font-family: 'DM Sans', sans-serif; /* fonte principal */
+}
+
+/* Container principal centralizado na tela */
+.ws-wrap {
+  min-height: 100vh; /* ocupa toda a altura da tela */
+  display: flex; /* ativa flexbox */
+  align-items: center; /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  padding: 2rem 1rem; /* espaçamento interno */
+  background: #f5f4f1; /* mesma cor do body */
+}
+
+/* Cartão principal */
+.ws-card {
+  background: #ffffff; /* fundo branco */
+  border: 0.5px solid rgba(0, 0, 0, 0.12); /* borda leve */
+  border-radius: 16px; /* cantos arredondados */
+  padding: 3rem 2.5rem 2.5rem; /* espaçamento interno */
+  max-width: 480px; /* largura máxima */
+  width: 100%; /* responsivo */
+  text-align: center; /* centraliza conteúdo */
+  animation: fadeUp 0.45s ease both; /* animação de entrada */
+}
+
+/* Ícone circular (check) */
+.ws-check {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%; /* deixa circular */
+  background: #eaf3de; /* fundo verde claro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.75rem; /* centraliza + espaço abaixo */
+}
+
+/* Estilo do SVG dentro do check */
+.ws-check svg {
+  width: 26px;
+  height: 26px;
+  stroke: #3b6d11; /* cor da linha */
+  stroke-width: 2.5; /* espessura */
+  fill: none; /* sem preenchimento */
+  stroke-linecap: round; /* pontas arredondadas */
+  stroke-linejoin: round;
+}
+
+/* Tag (tipo "status") */
+.ws-tag {
+  display: inline-block;
+  background: #eaf3de;
+  color: #3b6d11;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em; /* espaçamento entre letras */
+  text-transform: uppercase; /* deixa em maiúsculo */
+  padding: 4px 12px;
+  border-radius: 999px; /* formato pill */
+  margin-bottom: 1.25rem;
+}
+
+/* Título principal */
+.ws-title {
+  font-family: 'DM Serif Display', serif; /* fonte diferente para destaque */
+  font-size: 28px;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin: 0 0 0.75rem;
+  line-height: 1.25;
+}
+
+/* Subtítulo / descrição */
+.ws-sub {
+  font-size: 15px;
+  color: #6b6b6b;
+  line-height: 1.65;
+  margin: 0 0 2rem;
+}
+
+/* Linha divisória */
+.ws-divider {
+  border: none;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.12);
+  margin: 0 0 1.75rem;
+}
+
+/* Lista de passos */
+.ws-steps {
+  list-style: none; /* remove bullets */
+  padding: 0;
+  margin: 0 0 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column; /* empilha itens */
+  gap: 1rem; /* espaçamento entre itens */
+}
+
+/* Cada item da lista */
+.ws-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* Número do passo */
+.ws-step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b6b6b;
+  flex-shrink: 0; /* impede de encolher */
+  margin-top: 1px;
+}
+
+/* Texto do passo */
+.ws-step-text {
+  font-size: 14px;
+  color: #6b6b6b;
+  line-height: 1.55;
+}
+
+/* Destaque dentro do texto */
+.ws-step-text strong {
+  font-weight: 500;
+  color: #1a1a1a;
+  display: block;
+  margin-bottom: 1px;
+}
+
+/* Botão principal */
+.ws-btn {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  background: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s; /* efeito suave no hover */
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Efeito ao passar o mouse */
+.ws-btn:hover {
+  opacity: 0.85;
+}
+
+/* Link secundário */
+.ws-link {
+  font-size: 13px;
+  color: #aaaaaa;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Hover do link */
+.ws-link:hover {
+  color: #6b6b6b;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* começa levemente abaixo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* posição normal */
+  }
+}

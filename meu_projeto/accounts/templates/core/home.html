@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Sistema de cadastro TUTU</h2>
+        <div class="link">
+            <p>Se não tem conta</p>
+            <a class="btn" href="{% url 'register' %}">Cadastrar</a>
+        </div>
+        <div class="link">
+            <p>Se já tem conta</p>
+            <a class="btn" href="{% url 'login' %}">Logar</a>
+        </div>
+    </div>
+</body>
+</html>
